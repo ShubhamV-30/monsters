@@ -1,14 +1,13 @@
 import React from 'react'
-import ReactDom from 'react-dom/client'
-import App from './App'
+import ReactDOM from 'react-dom/client'
+import App from './pages/home/App'
 import './index.css'
-import './App.css'
 
 
-const root = ReactDom.createRoot(document.getElementById('root'))
+const root = ReactDOM.createRoot(document.getElementById('root'))
 
 root.render(
-    <>
-        <App/>
-    </>
+  <> {/**React Fragments just like div */}
+    <App />
+  </>
 )
